@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - I-M Studios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">I-M Studios</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="categorias.html">Categorías</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="titulo-pagina">
+      <h1>Contáctanos</h1>
+      <p>¿Tienes alguna pregunta? Escríbenos y te responderemos pronto.</p>
+    </section>
+
+    <section class="contacto">
+
+      <p id="mensajeExito" style="display:none; color:green; font-weight:bold;">
+        ✅ ¡Mensaje enviado con éxito! Te responderemos pronto.
+      </p>
+
+      <form id="formulario">
+
+        <div class="campo">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" placeholder="Tu nombre completo" />
+          <span class="error" id="errorNombre"></span>
+        </div>
+
+        <div class="campo">
+          <label for="ciudad">Ciudad:</label>
+          <input type="text" id="ciudad" placeholder="Tu ciudad" />
+          <span class="error" id="errorCiudad"></span>
+        </div>
+
+        <div class="campo">
+          <label for="email">Email:</label>
+          <input type="text" id="email" placeholder="tucorreo@ejemplo.com" />
+          <span class="error" id="errorEmail"></span>
+        </div>
+
+        <div class="campo">
+          <label for="asunto">Asunto:</label>
+          <input type="text" id="asunto" placeholder="¿Sobre qué deseas escribirnos?" />
+          <span class="error" id="errorAsunto"></span>
+        </div>
+
+        <div class="campo">
+          <label for="descripcion">Descripción:</label>
+          <textarea id="descripcion" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+          <span class="error" id="errorDescripcion"></span>
+        </div>
+
+        <button type="button" class="boton" onclick="validarFormulario()">Enviar mensaje</button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 I-M Studios - Todos los derechos reservados</p>
+    <nav>
+      <a href="index.html">Inicio</a> |
+      <a href="categorias.html">Categorías</a> |
+      <a href="productos.html">Productos</a> |
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
